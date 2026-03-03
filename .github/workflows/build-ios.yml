@@ -1,5 +1,4 @@
 name: Build iOS with EAS
-
 on:
   workflow_dispatch:
 
@@ -12,7 +11,7 @@ jobs:
         with:
           node-version: 20
       - uses: oven-sh/setup-bun@v1
-      - run: npm install -g eas-cli
+      - run: npm install -g eas-cli@16.17.4
       - name: Install deps
         run: cd mobile && bun install
       - name: EAS build iOS
