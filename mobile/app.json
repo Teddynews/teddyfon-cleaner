@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "TeddyFon Cleaner",
+    "slug": "teddyfon-cleaner",
+    "scheme": "vibecode",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vibecode.teddyfoncleaner-zsq8er",
+      "buildNumber": "1",
+      "infoPlist": {
+        "NSPhotoLibraryUsageDescription": "TeddyFon Cleaner accesses your photo library so you can move media between the app and your library.",
+        "NSPhotoLibraryAddUsageDescription": "TeddyFon Cleaner saves media you export from the app into your photo library."
+      }
+    },
+    "android": {
+      "edgeToEdgeEnabled": true
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "icon": "./icon.png"
+  }
+}
