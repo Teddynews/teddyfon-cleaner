@@ -1,1 +1,32 @@
-{"expo":{"name":"TeddyFon Cleaner","slug":"teddyfon-cleaner","scheme":"vibecode","version":"1.0.1","orientation":"portrait","userInterfaceStyle":"automatic","newArchEnabled":true,"ios":{"supportsTablet":true,"bundleIdentifier":"com.vibecode.teddyfoncleaner-zsq8er","buildNumber":"2","infoPlist":{"NSPhotoLibraryUsageDescription":"TeddyFon Cleaner accesses your photo library so you can move media between the app and your library.","NSPhotoLibraryAddUsageDescription":"TeddyFon Cleaner saves media you export from the app into your photo library."}},"android":{"edgeToEdgeEnabled":true},"plugins":["expo-router"],"experiments":{"typedRoutes":true},"icon":"./icon.png"}}
+{
+  "expo": {
+    "name": "TeddyFon Cleaner",
+    "slug": "teddyfon-cleaner-1",
+    "owner": "teddynews",
+    "scheme": "vibecode",
+    "version": "1.0.1",
+    "extra": {
+      "eas": {
+        "projectId": "e61699e7-051e-457a-a9e2-68722af6c235"
+      }
+    },
+    "orientation": "portrait",
+    "userInterfaceStyle": "automatic",
+    "newArchEnabled": true,
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.vibecode.teddyfoncleaner",
+      "buildNumber": "2"
+    },
+    "android": {
+      "edgeToEdgeEnabled": true
+    },
+    "plugins": [
+      "expo-router"
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "icon": "./icon.png"
+  }
+}
