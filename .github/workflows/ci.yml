@@ -1,0 +1,27 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        dir: [mobile, backend]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: oven-sh/setup-bun@v1
+      - name: Install
+        run: cd ${{ matrix.dir }} && bun install
+      - name: Lint / typecheck (if available)
+        run: |
+          cd ${{ matrix.dir }}
+          if [ -f package.json ]; then
+            scripts=$(node -e "const s=require('./package.json').scripts||{}; console.log(Object.keys(s).join(' '))")
+            if echo "$scripts" | grep -q lint; then bun run lint; fi
+            if echo "$scripts" | grep -q typecheck; then bun run typecheck; fi
+          fi
